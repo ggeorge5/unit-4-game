@@ -17,8 +17,58 @@
 
 
 <body>
-        
+    <container id="background">
+        <row>
+          <col-md-4>
+            <h1>Crystal Collector!!</h1>
+          </col-md-4>
+        </row>
 
+        <row>
+          <col-lg-6>
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add </p>
+          </col-lg-6>
+        </row>
+
+        <row>
+          <col-md-4>
+            <span id="target-number">100</span>
+          </col-md-4>
+          
+          <span col-md-2>
+            <div id="wins">Wins: </div>
+            <div id="losses">Losses: </div>
+          </span col-md-2>
+        </row>
+
+        <row>
+          <img id="crystal-image" src="assets/images/article-migration-image-how-to-work-with-crystals.png" alt="image of a crystal"/>
+        </row>
+
+        <row>
+          <div>Your Total Score is:</div>
+        </row>
+
+        <row>
+            <div id="total-score"></div>
+        </row>
+    </container>    
+
+
+    <script type="text/javascript">
+    
+    $("#crystal-image").on("click", function (){
+        alert('You clicked the crystal!!');
+    })
+    
+    
+    
+    </script>
+    
+    
+    
+    
 
 
 </body>
