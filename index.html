@@ -33,7 +33,7 @@
 
         <row>
           <col-md-4>
-            <span id="target-number">100</span>
+            <span id="number-to-guess"></span>
           </col-md-4>
           
           <span col-md-2>
@@ -57,10 +57,26 @@
 
 
     <script type="text/javascript">
+
+    var wins = 0;
+    var losses = 0;
+    var counter = 0;
+    var targetNumber = 56;
+
+    
     
     $("#crystal-image").on("click", function (){
-        alert('You clicked the crystal!!');
+        counter += 10;
+
+        if (counter === targetNumber){
+            alert('Congrats! you win!')
+        }else {
+            counter >= targetNumber;
+            alert('Sorry you lose!');
+        }
     })
+
+
     
     
     
